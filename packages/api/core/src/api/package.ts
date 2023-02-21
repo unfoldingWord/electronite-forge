@@ -6,7 +6,7 @@ import { ForgeArch, ForgeListrTask, ForgeListrTaskDefinition, ForgePlatform, Res
 import { getHostArch } from '@electron/get';
 import chalk from 'chalk';
 import debug from 'debug';
-import packager, { FinalizePackageTargetsHookFunction, HookFunction, TargetDefinition } from 'electron-packager';
+import packager, { FinalizePackageTargetsHookFunction, HookFunction, TargetDefinition } from 'electronite-packager';
 import glob from 'fast-glob';
 import fs from 'fs-extra';
 import { Listr } from 'listr2';

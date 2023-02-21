@@ -1,7 +1,7 @@
 import { ChildProcess } from 'child_process';
 
 import { RebuildOptions } from '@electron/rebuild';
-import { ArchOption, Options as ElectronPackagerOptions, TargetPlatform } from 'electron-packager';
+import { ArchOption, Options as ElectronPackagerOptions, TargetPlatform } from 'electronite-packager';
 import { ListrDefaultRenderer, ListrTask, ListrTaskWrapper } from 'listr2';
 
 export type ForgeListrTask<T> = ListrTaskWrapper<T, ListrDefaultRenderer>;

@@ -144,7 +144,7 @@ export default async ({
             'electron-installer-dmg': 'already uses this module as a transitive dependency',
             'electron-installer-flatpak': 'already uses this module as a transitive dependency',
             'electron-installer-redhat': 'already uses this module as a transitive dependency',
-            'electron-packager': 'already uses this module as a transitive dependency',
+            'electronite-packager': 'already uses this module as a transitive dependency',
             'electron-winstaller': 'already uses this module as a transitive dependency',
           };
 
@@ -258,7 +258,7 @@ export default async ({
         },
         task: (_, task) => {
           task.output = `We have attempted to convert your app to be in a format that Electron Forge understands.
-          
+
           Thanks for using ${chalk.green('Electron Forge')}!`;
         },
       },

@@ -3,7 +3,7 @@ import * as path from 'path';
 
 import { ResolvedForgeConfig } from '@electron-forge/shared-types';
 import { expect } from 'chai';
-import { IgnoreFunction } from 'electron-packager';
+import { IgnoreFunction } from 'electronite-packager';
 import * as fs from 'fs-extra';
 
 import { WebpackPluginConfig } from '../src/Config';
