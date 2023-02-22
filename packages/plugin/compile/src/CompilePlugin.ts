@@ -1,7 +1,7 @@
 import * as path from 'path';
 
-import { PluginBase, StartOptions } from '@electron-forge/plugin-base';
-import { ForgeHookMap, ResolvedForgeConfig } from '@electron-forge/shared-types';
+import { PluginBase, StartOptions } from '@electronite-forge/plugin-base';
+import { ForgeHookMap, ResolvedForgeConfig } from '@electronite-forge/shared-types';
 
 import { CompilePluginConfig } from './Config';
 import { createCompileHook } from './lib/compile-hook';

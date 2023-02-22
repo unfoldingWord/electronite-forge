@@ -13,7 +13,7 @@ import { isLocalWindow, isNoWindow, isPreloadOnly } from './util/rendererTypeUti
 type EntryType = string | string[] | Record<string, string | string[]>;
 type WebpackMode = 'production' | 'development';
 
-const d = debug('electron-forge:plugin:webpack:webpackconfig');
+const d = debug('electronite-forge:plugin:webpack:webpackconfig');
 
 export type ConfigurationFactory = (
   env: string | Record<string, string | boolean | number> | unknown,

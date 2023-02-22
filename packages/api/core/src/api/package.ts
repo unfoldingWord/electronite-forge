@@ -1,9 +1,9 @@
 import path from 'path';
 import { promisify } from 'util';
 
-import { getElectronVersion, listrCompatibleRebuildHook } from '@electron-forge/core-utils';
-import { ForgeArch, ForgeListrTask, ForgeListrTaskDefinition, ForgePlatform, ResolvedForgeConfig } from '@electron-forge/shared-types';
 import { getHostArch } from '@electron/get';
+import { getElectronVersion, listrCompatibleRebuildHook } from '@electronite-forge/core-utils';
+import { ForgeArch, ForgeListrTask, ForgeListrTaskDefinition, ForgePlatform, ResolvedForgeConfig } from '@electronite-forge/shared-types';
 import chalk from 'chalk';
 import debug from 'debug';
 import packager, { FinalizePackageTargetsHookFunction, HookFunction, TargetDefinition } from 'electronite-packager';
@@ -19,7 +19,7 @@ import { readMutatedPackageJson } from '../util/read-package-json';
 import requireSearch from '../util/require-search';
 import resolveDir from '../util/resolve-dir';
 
-const d = debug('electron-forge:packager');
+const d = debug('electronite-forge:packager');
 
 /**
  * Resolves hooks if they are a path to a file (instead of a `Function`).

@@ -1,4 +1,4 @@
-import { ForgeHookFn, ResolvedForgeConfig } from '@electron-forge/shared-types';
+import { ForgeHookFn, ResolvedForgeConfig } from '@electronite-forge/shared-types';
 import { expect } from 'chai';
 import { SinonStub, stub } from 'sinon';
 

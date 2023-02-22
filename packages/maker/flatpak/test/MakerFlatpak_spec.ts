@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { MakerBase, MakerOptions } from '@electron-forge/maker-base';
-import { ForgeArch } from '@electron-forge/shared-types';
+import { MakerBase, MakerOptions } from '@electronite-forge/maker-base';
+import { ForgeArch } from '@electronite-forge/shared-types';
 import { expect } from 'chai';
 import 'chai-as-promised';
 import proxyquire from 'proxyquire';

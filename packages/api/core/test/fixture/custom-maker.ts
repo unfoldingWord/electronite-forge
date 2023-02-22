@@ -1,5 +1,5 @@
-import { MakerBase } from '@electron-forge/maker-base';
-import { ForgePlatform } from '@electron-forge/shared-types';
+import { MakerBase } from '@electronite-forge/maker-base';
+import { ForgePlatform } from '@electronite-forge/shared-types';
 
 interface Config {
   artifactPath: string;

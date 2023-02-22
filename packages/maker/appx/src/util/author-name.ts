@@ -1,4 +1,4 @@
-import { PackagePerson } from '@electron-forge/shared-types';
+import { PackagePerson } from '@electronite-forge/shared-types';
 import parseAuthor from 'parse-author';
 
 export default function getNameFromAuthor(author: PackagePerson): string {

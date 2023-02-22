@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { ForgeHookFn } from '@electron-forge/shared-types';
+import { ForgeHookFn } from '@electronite-forge/shared-types';
 import fs from 'fs-extra';
 
 export const createCompileHook =

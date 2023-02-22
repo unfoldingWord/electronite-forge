@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { PublisherBase, PublisherOptions } from '@electron-forge/publisher-base';
-import { ForgeMakeResult } from '@electron-forge/shared-types';
+import { PublisherBase, PublisherOptions } from '@electronite-forge/publisher-base';
+import { ForgeMakeResult } from '@electronite-forge/shared-types';
 import { GetResponseDataTypeFromEndpointMethod } from '@octokit/types';
 import fs from 'fs-extra';
 import mime from 'mime-types';

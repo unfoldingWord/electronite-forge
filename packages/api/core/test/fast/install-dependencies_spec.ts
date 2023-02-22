@@ -21,7 +21,7 @@ describe('Install dependencies', () => {
     spawnSpy.returns(spawnPromise);
     hasYarnSpy = stub();
     install = proxyquire.noCallThru().load('../../src/util/install-dependencies', {
-      '@electron-forge/core-utils': {
+      '@electronite-forge/core-utils': {
         yarnOrNpmSpawn: spawnSpy,
         hasYarn: hasYarnSpy,
       },

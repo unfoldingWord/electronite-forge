@@ -1,8 +1,8 @@
-import { hasYarn, yarnOrNpmSpawn } from '@electron-forge/core-utils';
+import { hasYarn, yarnOrNpmSpawn } from '@electronite-forge/core-utils';
 import { ExitError } from '@malept/cross-spawn-promise';
 import debug from 'debug';
 
-const d = debug('electron-forge:dependency-installer');
+const d = debug('electronite-forge:dependency-installer');
 
 export enum DepType {
   PROD = 'PROD',

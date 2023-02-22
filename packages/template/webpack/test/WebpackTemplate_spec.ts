@@ -1,6 +1,6 @@
 import path from 'path';
 
-import * as testUtils from '@electron-forge/test-utils';
+import * as testUtils from '@electronite-forge/test-utils';
 import { expect } from 'chai';
 import fs from 'fs-extra';
 import { Listr } from 'listr2';

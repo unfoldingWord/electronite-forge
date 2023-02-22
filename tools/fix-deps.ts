@@ -23,7 +23,7 @@ import { getPackageInfo } from './utils';
       if (!deps) continue;
 
       for (const depKey in deps) {
-        if (depKey.startsWith('@electron-forge/')) continue;
+        if (depKey.startsWith('@electronite-forge/')) continue;
 
         if (deps[depKey] !== allDeps[depKey]) {
           console.error(p.name, depKey, deps[depKey], '-->', allDeps[depKey]);

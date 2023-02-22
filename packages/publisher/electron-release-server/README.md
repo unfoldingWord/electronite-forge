@@ -1,6 +1,6 @@
 ## publisher-electron-release-server
 
-`@electron-forge/publisher-electron-release-server` publishes all your artifacts to a hosted instance of [Electron Release Server](https://github.com/ArekSredzki/electron-release-server) where users will be able to download them.
+`electronite-forge/publisher-electron-release-server` publishes all your artifacts to a hosted instance of [Electron Release Server](https://github.com/ArekSredzki/electron-release-server) where users will be able to download them.
 
 Please note that Electron Release Server is a community powered project and is not associated with Electron Forge or the Electron project directly.
 
@@ -12,7 +12,7 @@ module.exports = {
   // ...
   publishers: [
     {
-      name: '@electron-forge/publisher-electron-release-server',
+      name: 'electronite-forge/publisher-electron-release-server',
       config: {
         baseUrl: 'https://update.server.com',
         username: 'admin',

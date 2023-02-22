@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { ResolvedForgeConfig } from '@electron-forge/shared-types';
+import { ResolvedForgeConfig } from '@electronite-forge/shared-types';
 
 const BASE_OUT_DIR = 'out';
 

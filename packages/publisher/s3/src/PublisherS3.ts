@@ -4,12 +4,12 @@ import path from 'path';
 import { S3Client } from '@aws-sdk/client-s3';
 import { Progress, Upload } from '@aws-sdk/lib-storage';
 import { Credentials } from '@aws-sdk/types';
-import { PublisherBase, PublisherOptions } from '@electron-forge/publisher-base';
+import { PublisherBase, PublisherOptions } from '@electronite-forge/publisher-base';
 import debug from 'debug';
 
 import { PublisherS3Config } from './Config';
 
-const d = debug('electron-forge:publish:s3');
+const d = debug('electronite-forge:publish:s3');
 
 type S3Artifact = {
   path: string;

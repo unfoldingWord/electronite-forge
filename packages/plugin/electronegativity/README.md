@@ -8,7 +8,7 @@ The Electronegativity plugin integrates Doyensec's Electronegativity tool into t
 module.exports = {
   plugins: [
     [
-      '@electron-forge/plugin-electronegativity',
+      '@electronite-forge/plugin-electronegativity',
       {
         isSarif: true
       }

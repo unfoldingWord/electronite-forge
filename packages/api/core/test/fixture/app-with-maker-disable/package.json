@@ -4,7 +4,7 @@
     "forge": {
       "makers": [
         {
-          "name": "@electron-forge/maker-zip",
+          "name": "@electronite-forge/maker-zip",
           "enabled": false,
           "platforms": [
             "linux"

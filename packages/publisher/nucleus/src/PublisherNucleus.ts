@@ -1,14 +1,14 @@
 import fs from 'fs';
 import path from 'path';
 
-import { PublisherBase, PublisherOptions } from '@electron-forge/publisher-base';
+import { PublisherBase, PublisherOptions } from '@electronite-forge/publisher-base';
 import debug from 'debug';
 import FormData from 'form-data';
 import fetch from 'node-fetch';
 
 import { PublisherNucleusConfig } from './Config';
 
-const d = debug('electron-forge:publish:nucleus');
+const d = debug('electronite-forge:publish:nucleus');
 
 export default class PublisherNucleus extends PublisherBase<PublisherNucleusConfig> {
   name = 'nucleus';

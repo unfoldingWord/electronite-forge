@@ -8,7 +8,7 @@ import installDeps from '../../src/util/install-dependencies';
 
 if (!(process.platform === 'linux' && process.env.CI)) {
   describe('install-dependencies', () => {
-    const installDir = path.resolve(os.tmpdir(), 'electron-forge-test-install-dependencies');
+    const installDir = path.resolve(os.tmpdir(), 'electronite-forge-test-install-dependencies');
 
     before(async () => {
       fs.ensureDir(installDir);

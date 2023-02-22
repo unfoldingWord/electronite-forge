@@ -1,5 +1,5 @@
 {
-  "name": "@electron-forge/plugin-base",
+  "name": "@electronite-forge/plugin-base",
   "version": "6.0.5",
   "description": "Base plugin for Electron Forge",
   "repository": "https://github.com/electron/forge",
@@ -15,7 +15,7 @@
     "node": ">= 14.17.5"
   },
   "dependencies": {
-    "@electron-forge/shared-types": "6.0.5"
+    "@electronite-forge/shared-types": "6.0.5"
   },
   "publishConfig": {
     "access": "public"

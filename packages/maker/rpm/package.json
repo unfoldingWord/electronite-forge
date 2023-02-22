@@ -1,5 +1,5 @@
 {
-  "name": "@electron-forge/maker-rpm",
+  "name": "@electronite-forge/maker-rpm",
   "version": "6.0.5",
   "description": "Rpm maker for Electron Forge",
   "repository": "https://github.com/electron/forge",
@@ -22,8 +22,8 @@
     "node": ">= 14.17.5"
   },
   "dependencies": {
-    "@electron-forge/maker-base": "6.0.5",
-    "@electron-forge/shared-types": "6.0.5"
+    "@electronite-forge/maker-base": "6.0.5",
+    "@electronite-forge/shared-types": "6.0.5"
   },
   "optionalDependencies": {
     "electron-installer-redhat": "^3.2.0"

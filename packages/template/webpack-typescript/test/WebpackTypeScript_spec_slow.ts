@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { yarnOrNpmSpawn } from '@electron-forge/core-utils';
-import * as testUtils from '@electron-forge/test-utils';
+import { yarnOrNpmSpawn } from '@electronite-forge/core-utils';
+import * as testUtils from '@electronite-forge/test-utils';
 import { expect } from 'chai';
 import glob from 'fast-glob';
 import fs from 'fs-extra';

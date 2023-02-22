@@ -21,7 +21,7 @@ export async function ensureModulesInstalled(dir: string, deps: string[], devDep
 let dirID = Date.now();
 
 export async function ensureTestDirIsNonexistent(): Promise<string> {
-  const dir = path.resolve(os.tmpdir(), `electron-forge-test-${dirID}`);
+  const dir = path.resolve(os.tmpdir(), `electronite-forge-test-${dirID}`);
   dirID += 1;
   await fs.remove(dir);
 

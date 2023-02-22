@@ -8,7 +8,7 @@ _Note: This plugin should only be used by people who are building Electron local
 // forge.config.js
 
 {
-    name: '@electron-forge/plugin-local-electron',
+    name: '@electronite-forge/plugin-local-electron',
     config: {
     electronPath: '/Users/me/projects/electron/out/Testing',
     },

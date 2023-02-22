@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { MakerBase, MakerOptions } from '@electron-forge/maker-base';
-import { ForgePlatform } from '@electron-forge/shared-types';
+import { MakerBase, MakerOptions } from '@electronite-forge/maker-base';
+import { ForgePlatform } from '@electronite-forge/shared-types';
 import resolveCommand from 'cross-spawn/lib/util/resolveCommand';
 import windowsStore from 'electron-windows-store';
 import { isValidPublisherName, makeCert } from 'electron-windows-store/lib/sign';

@@ -2,7 +2,7 @@ import { exec } from 'child_process';
 
 import debug from 'debug';
 
-const d = debug('electron-forge:init:git');
+const d = debug('electronite-forge:init:git');
 
 export const initGit = async (dir: string): Promise<void> => {
   await new Promise<void>((resolve, reject) => {

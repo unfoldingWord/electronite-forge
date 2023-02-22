@@ -1,6 +1,6 @@
 import * as path from 'path';
 
-import { ForgeMakeResult } from '@electron-forge/shared-types';
+import { ForgeMakeResult } from '@electronite-forge/shared-types';
 import { expect } from 'chai';
 import proxyquire from 'proxyquire';
 
@@ -19,7 +19,7 @@ describe('make', () => {
     await stubbedMake({
       arch: 'x64',
       dir: path.join(fixtureDir, 'app-with-scoped-name'),
-      overrideTargets: ['@electron-forge/maker-zip'],
+      overrideTargets: ['@electronite-forge/maker-zip'],
       platform: 'linux',
       skipPackage: true,
     });
@@ -32,7 +32,7 @@ describe('make', () => {
     before(() => {
       const electronPath = path.resolve(__dirname, 'node_modules/electron');
       stubbedMake = proxyquire.noCallThru().load('../../src/api/make', {
-        '@electron-forge/core-utils': {
+        '@electronite-forge/core-utils': {
           getElectronModulePath: () => Promise.resolve(electronPath),
           getElectronVersion: () => Promise.resolve('1.0.0'),
         },

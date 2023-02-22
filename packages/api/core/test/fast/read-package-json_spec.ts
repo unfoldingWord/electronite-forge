@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { ResolvedForgeConfig } from '@electron-forge/shared-types';
+import { ResolvedForgeConfig } from '@electronite-forge/shared-types';
 import { expect } from 'chai';
 
 import { readMutatedPackageJson, readRawPackageJson } from '../../src/util/read-package-json';

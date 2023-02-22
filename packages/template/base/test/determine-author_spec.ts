@@ -1,4 +1,4 @@
-import { PackagePerson } from '@electron-forge/shared-types';
+import { PackagePerson } from '@electronite-forge/shared-types';
 import { expect } from 'chai';
 import proxyquire from 'proxyquire';
 import { stub } from 'sinon';

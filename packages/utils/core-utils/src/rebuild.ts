@@ -1,8 +1,8 @@
 import * as cp from 'child_process';
 import * as path from 'path';
 
-import { ForgeArch, ForgeListrTask, ForgePlatform } from '@electron-forge/shared-types';
 import { RebuildOptions } from '@electron/rebuild';
+import { ForgeArch, ForgeListrTask, ForgePlatform } from '@electronite-forge/shared-types';
 
 export const listrCompatibleRebuildHook = async (
   buildPath: string,

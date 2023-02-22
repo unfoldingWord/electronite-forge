@@ -7,7 +7,7 @@ import semver from 'semver';
 
 import { safeYarnOrNpm } from './yarn-or-npm';
 
-const d = debug('electron-forge:electron-version');
+const d = debug('electronite-forge:electron-version');
 
 const electronPackageNames = ['electron-prebuilt-compile', 'electron-prebuilt', 'electron-nightly', 'electron'];
 

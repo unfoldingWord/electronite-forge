@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { MakerBase, MakerOptions } from '@electron-forge/maker-base';
-import { ForgeArch } from '@electron-forge/shared-types';
+import { MakerBase, MakerOptions } from '@electronite-forge/maker-base';
+import { ForgeArch } from '@electronite-forge/shared-types';
 import { expect } from 'chai';
 import proxyquire from 'proxyquire';
 import { SinonStub, stub } from 'sinon';

@@ -2,9 +2,9 @@ import assert from 'assert';
 import { execSync } from 'child_process';
 import path from 'path';
 
-import { createDefaultCertificate } from '@electron-forge/maker-appx';
-import { ForgeConfig, IForgeResolvableMaker } from '@electron-forge/shared-types';
-import { ensureTestDirIsNonexistent, expectLintToPass, expectProjectPathExists } from '@electron-forge/test-utils';
+import { createDefaultCertificate } from '@electronite-forge/maker-appx';
+import { ForgeConfig, IForgeResolvableMaker } from '@electronite-forge/shared-types';
+import { ensureTestDirIsNonexistent, expectLintToPass, expectProjectPathExists } from '@electronite-forge/test-utils';
 import { expect } from 'chai';
 import { readMetadata } from 'electron-installer-common';
 import fs from 'fs-extra';
@@ -36,7 +36,7 @@ async function updatePackageJSON(dir: string, packageJSONUpdater: (packageJSON: 
 
 for (const nodeInstaller of ['npm', 'yarn']) {
   process.env.NODE_INSTALLER = nodeInstaller;
-  describe(`electron-forge API (with installer=${nodeInstaller})`, () => {
+  describe(`electronite-forge API (with installer=${nodeInstaller})`, () => {
     let dir: string;
 
     const beforeInitTest = (params?: Partial<InitOptions>, beforeInit?: BeforeInitFunction) => {
@@ -76,7 +76,7 @@ for (const nodeInstaller of ['npm', 'yarn']) {
         await expectProjectPathExists(dir, 'node_modules', 'folder');
         expect(await fs.pathExists(path.resolve(dir, 'node_modules/electron')), 'electron should exist').to.equal(true);
         expect(await fs.pathExists(path.resolve(dir, 'node_modules/electron-squirrel-startup')), 'electron-squirrel-startup should exist').to.equal(true);
-        expect(await fs.pathExists(path.resolve(dir, 'node_modules/@electron-forge/cli')), '@electron-forge/cli should exist').to.equal(true);
+        expect(await fs.pathExists(path.resolve(dir, 'node_modules/@electronite-forge/cli')), '@electronite-forge/cli should exist').to.equal(true);
       });
 
       it('should create a forge.config.js', async () => {
@@ -227,7 +227,7 @@ describe('Electron Forge API', () => {
     let devCert: string;
 
     before(async () => {
-      dir = path.join(await ensureTestDirIsNonexistent(), 'electron-forge-test');
+      dir = path.join(await ensureTestDirIsNonexistent(), 'electronite-forge-test');
       await forge.init({ dir });
 
       await updatePackageJSON(dir, async (packageJSON) => {
@@ -280,7 +280,7 @@ describe('Electron Forge API', () => {
     it('can make from custom outDir without errors', async () => {
       await updatePackageJSON(dir, async (packageJSON) => {
         // eslint-disable-next-line node/no-missing-require
-        packageJSON.config.forge.makers = [{ name: require.resolve('@electron-forge/maker-zip') } as IForgeResolvableMaker];
+        packageJSON.config.forge.makers = [{ name: require.resolve('@electronite-forge/maker-zip') } as IForgeResolvableMaker];
       });
 
       await forge.make({ dir, skipPackage: true, outDir: `${dir}/foo` });
@@ -339,15 +339,15 @@ describe('Electron Forge API', () => {
 
       function getMakers(good: boolean) {
         const allMakers = [
-          '@electron-forge/maker-appx',
-          '@electron-forge/maker-deb',
-          '@electron-forge/maker-dmg',
-          '@electron-forge/maker-flatpak',
-          '@electron-forge/maker-rpm',
-          '@electron-forge/maker-snap',
-          '@electron-forge/maker-squirrel',
-          '@electron-forge/maker-wix',
-          '@electron-forge/maker-zip',
+          '@electronite-forge/maker-appx',
+          '@electronite-forge/maker-deb',
+          '@electronite-forge/maker-dmg',
+          '@electronite-forge/maker-flatpak',
+          '@electronite-forge/maker-rpm',
+          '@electronite-forge/maker-snap',
+          '@electronite-forge/maker-squirrel',
+          '@electronite-forge/maker-wix',
+          '@electronite-forge/maker-zip',
         ];
         return allMakers
           .map((maker) => require.resolve(maker))
@@ -474,7 +474,7 @@ describe('Electron Forge API', () => {
             forge.make({
               dir,
               // eslint-disable-next-line node/no-missing-require
-              overrideTargets: [require.resolve('@electron-forge/maker-zip'), require.resolve('@electron-forge/maker-dmg')],
+              overrideTargets: [require.resolve('@electronite-forge/maker-zip'), require.resolve('@electronite-forge/maker-dmg')],
               platform: 'mas',
             })
           ).to.eventually.have.length(2);

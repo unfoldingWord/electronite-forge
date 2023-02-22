@@ -35,7 +35,7 @@
 - **packager:** "packaging application" log never stops when building for multiple architectures (#3006) ([247f52ab](https://github.com/electron/forge/commit/247f52ab))
 - **publish:** ignore unnecessary files when publishing to npm (#3024) ([ab8ea661](https://github.com/electron/forge/commit/ab8ea661))
 - **template-base:** use minimum instead of exact version when replacing `ELECTRON_FORGE/VERSION` in templates (#3030) ([7aaa7029](https://github.com/electron/forge/commit/7aaa7029))
-- use @electron-forge/cli hint for project resolution (#3023) ([b5d05874](https://github.com/electron/forge/commit/b5d05874))
+- use @electronite-forge/cli hint for project resolution (#3023) ([b5d05874](https://github.com/electron/forge/commit/b5d05874))
 - restore isProd in the webpack plugin (#3021) ([531788ba](https://github.com/electron/forge/commit/531788ba))
 
 #### [6.0.0-beta.70](https://github.com/electron/forge/releases/tag/v6.0.0-beta.70) (2022-10-28)
@@ -2128,7 +2128,7 @@
 ##### Bug Fixes
 
 - **core:**
-  - append current version to each sibling dependency of `@electron-forge` in the boilerplate (#537) ([051026da](https://github.com/electron-userland/electron-forge/commit/051026da))
+  - append current version to each sibling dependency of `@electronite-forge` in the boilerplate (#537) ([051026da](https://github.com/electron-userland/electron-forge/commit/051026da))
   - wait for overrideStartLogic before attempting to resolve the location of the Electron mod ([7e74206d](https://github.com/electron-userland/electron-forge/commit/7e74206d))
 
 ##### Code Style Changes

@@ -35,7 +35,7 @@ describe('locateElectronExecutable', () => {
     const appFixture = path.join(fixtureDir, 'bad-export');
     const packageJSON = {
       devDependencies: {
-        '@electron-forge/plugin-compile': '^6.0.0-beta.1',
+        '@electronite-forge/plugin-compile': '^6.0.0-beta.1',
         'electron-prebuilt-compile': '^1.4.0',
       },
     };
@@ -57,7 +57,7 @@ describe('locateElectronExecutable', () => {
   it('does not warn if prebuilt-compile exists with the corresponding plugin', async () => {
     const packageJSON = {
       devDependencies: {
-        '@electron-forge/plugin-compile': '^6.0.0-beta.1',
+        '@electronite-forge/plugin-compile': '^6.0.0-beta.1',
         'electron-prebuilt-compile': '1.0.0',
       },
     };
@@ -89,7 +89,7 @@ describe('pluginCompileExists', () => {
 
   it('returns true if the plugin is found in devDependencies', () => {
     const packageJSON = {
-      devDependencies: { '@electron-forge/plugin-compile': '^6.0.0-beta.1' },
+      devDependencies: { '@electronite-forge/plugin-compile': '^6.0.0-beta.1' },
     };
 
     expect(pluginCompileExists(packageJSON)).to.equal(true);
@@ -98,7 +98,7 @@ describe('pluginCompileExists', () => {
 
   it('warns and returns true if the plugin is found in dependencies', () => {
     const packageJSON = {
-      dependencies: { '@electron-forge/plugin-compile': '^6.0.0-beta.1' },
+      dependencies: { '@electronite-forge/plugin-compile': '^6.0.0-beta.1' },
       devDependencies: {},
     };
 

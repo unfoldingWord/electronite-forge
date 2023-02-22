@@ -1,6 +1,6 @@
 ## Electron Forge: publisher-bitbucket
 
-`@electron-forge/publisher-bitbucket` publishes your artifacts to Bitbucket where users will be able to download them.
+`@electronite-forge/publisher-bitbucket` publishes your artifacts to Bitbucket where users will be able to download them.
 
 This publish target is for Bitbucket Cloud only and will not work with self hosted Bitbucket Server instances.
 
@@ -12,7 +12,7 @@ module.exports = {
   // ...
   publishers: [
     {
-      name: '@electron-forge/publisher-bitbucket',
+      name: '@electronite-forge/publisher-bitbucket',
       config: {
         repository: {
           owner: 'myusername',

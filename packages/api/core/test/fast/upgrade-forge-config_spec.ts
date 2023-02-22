@@ -1,6 +1,6 @@
 import assert from 'assert';
 
-import { ForgeConfig, IForgeResolvableMaker, IForgeResolvablePublisher } from '@electron-forge/shared-types';
+import { ForgeConfig, IForgeResolvableMaker, IForgeResolvablePublisher } from '@electronite-forge/shared-types';
 import { expect } from 'chai';
 import { merge } from 'lodash';
 
@@ -39,7 +39,7 @@ describe('upgradeForgeConfig', () => {
     };
     const expected = [
       {
-        name: '@electron-forge/maker-deb',
+        name: '@electronite-forge/maker-deb',
         config: {
           depends: ['liboath0'],
         },
@@ -60,7 +60,7 @@ describe('upgradeForgeConfig', () => {
     };
     const expected = [
       {
-        name: '@electron-forge/maker-zip',
+        name: '@electronite-forge/maker-zip',
         platforms: ['darwin', 'linux'],
       },
     ] as IForgeResolvableMaker[];
@@ -77,7 +77,7 @@ describe('upgradeForgeConfig', () => {
     };
     const expected = [
       {
-        name: '@electron-forge/publisher-snapcraft',
+        name: '@electronite-forge/publisher-snapcraft',
         config: {
           release: 'beta',
         },
@@ -135,7 +135,7 @@ describe('updateUpgradedForgeDevDeps', () => {
 
   it('removes unused makers from devDependencies', () => {
     const packageJSON = merge({}, skeletonPackageJSON);
-    const devDeps = updateUpgradedForgeDevDeps(packageJSON, ['@electron-forge/maker-squirrel']);
+    const devDeps = updateUpgradedForgeDevDeps(packageJSON, ['@electronite-forge/maker-squirrel']);
     expect(devDeps).to.deep.equal([]);
   });
 
@@ -143,11 +143,11 @@ describe('updateUpgradedForgeDevDeps', () => {
     const packageJSON = merge({}, skeletonPackageJSON);
     packageJSON.config.forge.makers = [
       {
-        name: '@electron-forge/maker-zip',
+        name: '@electronite-forge/maker-zip',
         platforms: ['darwin', 'linux'],
       },
       {
-        name: '@electron-forge/maker-squirrel',
+        name: '@electronite-forge/maker-squirrel',
         config: {},
         platforms: ['win32'],
       },
@@ -155,18 +155,18 @@ describe('updateUpgradedForgeDevDeps', () => {
 
     const actual = updateUpgradedForgeDevDeps(packageJSON, []);
     expect(actual).to.have.lengthOf(2);
-    expect(actual.find((dep) => dep.startsWith('@electron-forge/maker-zip'))).to.not.equal(undefined);
-    expect(actual.find((dep) => dep.startsWith('@electron-forge/maker-squirrel'))).to.not.equal(undefined);
+    expect(actual.find((dep) => dep.startsWith('@electronite-forge/maker-zip'))).to.not.equal(undefined);
+    expect(actual.find((dep) => dep.startsWith('@electronite-forge/maker-squirrel'))).to.not.equal(undefined);
   });
 
   it('adds publishers to devDependencies', () => {
     const packageJSON = merge({}, skeletonPackageJSON);
-    packageJSON.config.forge.publishers = [{ name: '@electron-forge/publisher-github' }, { name: '@electron-forge/publisher-snapcraft' }];
+    packageJSON.config.forge.publishers = [{ name: '@electronite-forge/publisher-github' }, { name: '@electronite-forge/publisher-snapcraft' }];
 
     const actual = updateUpgradedForgeDevDeps(packageJSON, []);
     expect(actual).to.have.lengthOf(2);
-    expect(actual.find((dep) => dep.startsWith('@electron-forge/publisher-github'))).to.not.equal(undefined);
-    expect(actual.find((dep) => dep.startsWith('@electron-forge/publisher-snapcraft'))).to.not.equal(undefined);
+    expect(actual.find((dep) => dep.startsWith('@electronite-forge/publisher-github'))).to.not.equal(undefined);
+    expect(actual.find((dep) => dep.startsWith('@electronite-forge/publisher-snapcraft'))).to.not.equal(undefined);
   });
 
   it('adds electron-compile plugin to devDependencies when electron-prebuilt-compile is in devDependencies', () => {
@@ -178,6 +178,6 @@ describe('updateUpgradedForgeDevDeps', () => {
 
     const actual = updateUpgradedForgeDevDeps(packageJSON, []);
     expect(actual, JSON.stringify(actual)).to.have.lengthOf(1);
-    expect(actual[0]).to.match(/^@electron-forge\/plugin-compile/);
+    expect(actual[0]).to.match(/^@electronite-forge\/plugin-compile/);
   });
 });

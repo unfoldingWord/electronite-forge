@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { PublisherBase } from '@electron-forge/publisher-base';
+import { PublisherBase } from '@electronite-forge/publisher-base';
 import {
   ForgeConfigPublisher,
   ForgeListrTask,
@@ -9,7 +9,7 @@ import {
   IForgeResolvablePublisher,
   ResolvedForgeConfig,
   // ForgePlatform,
-} from '@electron-forge/shared-types';
+} from '@electronite-forge/shared-types';
 import chalk from 'chalk';
 import debug from 'debug';
 import fs from 'fs-extra';
@@ -23,7 +23,7 @@ import resolveDir from '../util/resolve-dir';
 
 import { listrMake, MakeOptions } from './make';
 
-const d = debug('electron-forge:publish');
+const d = debug('electronite-forge:publish');
 
 type PublishContext = {
   dir: string;

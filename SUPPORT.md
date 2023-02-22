@@ -8,13 +8,13 @@ dedicated channel for Electron Forge.
 ## Troubleshooting
 
 One way to troubleshoot potential problems is to set the `DEBUG` environment variable before
-running `electron-forge`. This will print debug information from the specified modules. The
+running `electronite-forge`. This will print debug information from the specified modules. The
 value of the environment variable is a comma-separated list of modules which support this logging
 feature. Known modules include:
 
 - `@electron/get:*`
 - `@electron/osx-sign`
-- `electron-forge:*` (always use this one before filing an issue)
+- `electronite-forge:*` (always use this one before filing an issue)
 - `electron-installer-debian`
 - `electron-installer-dmg`
 - `electron-installer-flatpak`
@@ -30,6 +30,6 @@ feature. Known modules include:
 We use the [`debug`](https://www.npmjs.com/package/debug#usage) module for this functionality. It
 has examples on how to set environment variables if you don't know how.
 
-**If you are using `npm run` to execute `electron-forge`, run the `electron-forge` command
+**If you are using `npm run` to execute `electronite-forge`, run the `electronite-forge` command
 without using `npm run` and make a note of the output, because `npm run` does not print out error
 messages when a script errors.**

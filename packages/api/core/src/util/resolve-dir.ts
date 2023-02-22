@@ -1,12 +1,12 @@
 import path from 'path';
 
-import { getElectronVersion } from '@electron-forge/core-utils';
+import { getElectronVersion } from '@electronite-forge/core-utils';
 import debug from 'debug';
 import fs from 'fs-extra';
 
 import { readRawPackageJson } from './read-package-json';
 
-const d = debug('electron-forge:project-resolver');
+const d = debug('electronite-forge:project-resolver');
 
 // FIXME: If we want getElectronVersion to be overridable by plugins
 //        and / or forge config then we need to be able to resolve
@@ -35,11 +35,11 @@ export default async (dir: string): Promise<string | null> => {
       }
 
       if (packageJSON.config && packageJSON.config.forge) {
-        d('electron-forge compatible package.json found in', testPath);
+        d('electronite-forge compatible package.json found in', testPath);
         return mDir;
       }
 
-      if (packageJSON.devDependencies?.['@electron-forge/cli']) {
+      if (packageJSON.devDependencies?.['@electronite-forge/cli']) {
         d('package.json with forge dependency found in', testPath);
         return mDir;
       }
@@ -49,7 +49,7 @@ export default async (dir: string): Promise<string | null> => {
     mDir = path.dirname(mDir);
   }
   if (bestGuessDir) {
-    d('guessing on the best electron-forge package.json found in', bestGuessDir);
+    d('guessing on the best electronite-forge package.json found in', bestGuessDir);
     return bestGuessDir;
   }
   if (lastError) {

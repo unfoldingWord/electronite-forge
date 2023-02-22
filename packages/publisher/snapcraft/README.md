@@ -12,7 +12,7 @@ module.exports = {
   // ...
   publishers: [
     {
-      name: '@electron-forge/publisher-snapcraft',
+      name: '@electronite-forge/publisher-snapcraft',
       config: {
         release: "latest/edge, insider/stable"
       }

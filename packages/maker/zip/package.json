@@ -1,5 +1,5 @@
 {
-  "name": "@electron-forge/maker-zip",
+  "name": "@electronite-forge/maker-zip",
   "version": "6.0.5",
   "description": "ZIP maker for Electron Forge",
   "repository": "https://github.com/electron/forge",
@@ -15,8 +15,8 @@
     "node": ">= 14.17.5"
   },
   "dependencies": {
-    "@electron-forge/maker-base": "6.0.5",
-    "@electron-forge/shared-types": "6.0.5",
+    "@electronite-forge/maker-base": "6.0.5",
+    "@electronite-forge/shared-types": "6.0.5",
     "cross-zip": "^4.0.0",
     "fs-extra": "^10.0.0"
   },

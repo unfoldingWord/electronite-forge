@@ -1,8 +1,8 @@
 import path from 'path';
 import { promisify } from 'util';
 
-import { EmptyConfig, MakerBase, MakerOptions } from '@electron-forge/maker-base';
-import { ForgePlatform } from '@electron-forge/shared-types';
+import { EmptyConfig, MakerBase, MakerOptions } from '@electronite-forge/maker-base';
+import { ForgePlatform } from '@electronite-forge/shared-types';
 
 export type MakerZIPConfig = EmptyConfig;
 

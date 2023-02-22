@@ -1,5 +1,5 @@
 {
-  "name": "@electron-forge/shared-types",
+  "name": "@electronite-forge/shared-types",
   "version": "6.0.5",
   "description": "Shared types across Electron Forge",
   "repository": "https://github.com/electron/forge",

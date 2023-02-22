@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { safeYarnOrNpm, updateElectronDependency } from '@electron-forge/core-utils';
-import baseTemplate from '@electron-forge/template-base';
+import { safeYarnOrNpm, updateElectronDependency } from '@electronite-forge/core-utils';
+import baseTemplate from '@electronite-forge/template-base';
 import chalk from 'chalk';
 import debug from 'debug';
 import fs from 'fs-extra';
@@ -15,7 +15,7 @@ import upgradeForgeConfig, { updateUpgradedForgeDevDeps } from '../util/upgrade-
 import { initGit } from './init-scripts/init-git';
 import { deps, devDeps, exactDevDeps } from './init-scripts/init-npm';
 
-const d = debug('electron-forge:import');
+const d = debug('electronite-forge:import');
 
 export interface ImportOptions {
   /**
@@ -139,7 +139,7 @@ export default async ({
             '@electron/osx-sign': 'already uses this module as a transitive dependency',
             'electron-builder': 'provides mostly equivalent functionality',
             'electron-download': 'already uses this module as a transitive dependency',
-            'electron-forge': 'replaced with @electron-forge/cli',
+            'electronite-forge': 'replaced with @electronite-forge/cli',
             'electron-installer-debian': 'already uses this module as a transitive dependency',
             'electron-installer-dmg': 'already uses this module as a transitive dependency',
             'electron-installer-flatpak': 'already uses this module as a transitive dependency',
@@ -179,9 +179,9 @@ export default async ({
             }
           };
 
-          await updatePackageScript('start', 'electron-forge start');
-          await updatePackageScript('package', 'electron-forge package');
-          await updatePackageScript('make', 'electron-forge make');
+          await updatePackageScript('start', 'electronite-forge start');
+          await updatePackageScript('package', 'electronite-forge package');
+          await updatePackageScript('make', 'electronite-forge make');
 
           d('forgified scripts object:', packageJSON.scripts);
 

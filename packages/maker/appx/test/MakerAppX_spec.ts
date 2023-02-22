@@ -8,7 +8,7 @@ import { createDefaultCertificate } from '../src/MakerAppX';
 
 describe('MakerApPX', () => {
   describe('createDefaultCertificate', () => {
-    const tmpDir = join(tmpdir(), `electron-forge-maker-appx-test-${Date.now()}`);
+    const tmpDir = join(tmpdir(), `electronite-forge-maker-appx-test-${Date.now()}`);
 
     before(async () => {
       await fs.ensureDir(tmpDir);

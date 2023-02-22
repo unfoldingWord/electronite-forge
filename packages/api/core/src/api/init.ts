@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { safeYarnOrNpm } from '@electron-forge/core-utils';
-import { ForgeTemplate } from '@electron-forge/shared-types';
+import { safeYarnOrNpm } from '@electronite-forge/core-utils';
+import { ForgeTemplate } from '@electronite-forge/shared-types';
 import debug from 'debug';
 import { Listr } from 'listr2';
 import semver from 'semver';
@@ -14,7 +14,7 @@ import { initDirectory } from './init-scripts/init-directory';
 import { initGit } from './init-scripts/init-git';
 import { initNPM } from './init-scripts/init-npm';
 
-const d = debug('electron-forge:init');
+const d = debug('electronite-forge:init');
 
 export interface InitOptions {
   /**

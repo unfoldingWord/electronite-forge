@@ -1,14 +1,14 @@
 {
-  "name": "@electron-forge/cli",
+  "name": "@electronite-forge/cli",
   "version": "6.0.5",
   "description": "A complete tool for building modern Electron applications",
   "repository": "https://github.com/electron/forge",
   "author": "Samuel Attard",
   "license": "MIT",
   "bin": {
-    "electron-forge": "dist/electron-forge.js",
-    "electron-forge-vscode-nix": "script/vscode.sh",
-    "electron-forge-vscode-win": "script/vscode.cmd"
+    "electronite-forge": "dist/electron-forge.js",
+    "electronite-forge-vscode-nix": "script/vscode.sh",
+    "electronite-forge-vscode-win": "script/vscode.cmd"
   },
   "devDependencies": {
     "@malept/cross-spawn-promise": "^2.0.0",
@@ -17,8 +17,8 @@
     "mocha": "^9.0.1"
   },
   "dependencies": {
-    "@electron-forge/core": "6.0.5",
-    "@electron-forge/shared-types": "6.0.5",
+    "@electronite-forge/core": "6.0.5",
+    "@electronite-forge/shared-types": "6.0.5",
     "@electron/get": "^2.0.0",
     "chalk": "^4.0.0",
     "commander": "^4.1.1",

@@ -11,7 +11,7 @@ let dir: string;
 let dirID = Date.now();
 
 const ensureTestDirIsNonexistent = async () => {
-  dir = path.resolve(os.tmpdir(), `electron-forge-git-test-${dirID}`);
+  dir = path.resolve(os.tmpdir(), `electronite-forge-git-test-${dirID}`);
   dirID += 1;
   await fs.remove(dir);
 };

@@ -1,9 +1,9 @@
-import { PackagePerson } from '@electron-forge/shared-types';
+import { PackagePerson } from '@electronite-forge/shared-types';
 import { spawn } from '@malept/cross-spawn-promise';
 import debug from 'debug';
 import username from 'username';
 
-const d = debug('electron-forge:determine-author');
+const d = debug('electronite-forge:determine-author');
 
 async function getGitConfig(name: string, cwd: string): Promise<string> {
   const value = await spawn('git', ['config', '--get', name], { cwd });

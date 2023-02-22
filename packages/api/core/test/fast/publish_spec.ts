@@ -1,7 +1,7 @@
 import os from 'os';
 import path from 'path';
 
-import { ForgeConfigPublisher, IForgePublisher } from '@electron-forge/shared-types';
+import { ForgeConfigPublisher, IForgePublisher } from '@electronite-forge/shared-types';
 import { expect } from 'chai';
 import fs from 'fs-extra';
 import proxyquire from 'proxyquire';
@@ -30,7 +30,7 @@ describe('publish', () => {
     publisherSpy = stub();
     voidStub = stub();
     nowhereStub = stub();
-    publishers = [{ name: '@electron-forge/publisher-test' }];
+    publishers = [{ name: '@electronite-forge/publisher-test' }];
     const fakePublisher = (stub: SinonStub, name = 'default') =>
       class _FakePublisher {
         private publish: SinonStub;
@@ -67,10 +67,10 @@ describe('publish', () => {
         if (name === 'nowhere') {
           return fakePublisher(nowhereStub);
         }
-        if (name === '@electron-forge/publisher-test') {
+        if (name === '@electronite-forge/publisher-test') {
           return fakePublisher(publisherSpy);
         }
-        if (name === '@electron-forge/publisher-foo') {
+        if (name === '@electronite-forge/publisher-foo') {
           return fakePublisher(publisherSpy, name);
         }
         return null;
@@ -96,18 +96,18 @@ describe('publish', () => {
         config: 'foo',
       },
       {
-        name: '@electron-forge/publisher-foo',
+        name: '@electronite-forge/publisher-foo',
         config: 'resolved',
       },
     ];
     await publish({
       dir: __dirname,
       interactive: false,
-      publishTargets: ['@electron-forge/publisher-foo'],
+      publishTargets: ['@electronite-forge/publisher-foo'],
     });
     expect(publisherSpy.callCount).to.equal(1);
 
-    expect(fooPublisher.name).to.equal('@electron-forge/publisher-foo');
+    expect(fooPublisher.name).to.equal('@electronite-forge/publisher-foo');
     expect(fooPublisher.providedConfig).to.equal('resolved');
   });
 
@@ -225,7 +225,7 @@ describe('publish', () => {
     };
 
     before(async () => {
-      dir = await fs.mkdtemp(path.resolve(os.tmpdir(), 'electron-forge-test-'));
+      dir = await fs.mkdtemp(path.resolve(os.tmpdir(), 'electronite-forge-test-'));
     });
 
     beforeEach(() => {
@@ -294,7 +294,7 @@ describe('publish', () => {
         await publish({
           dir,
           interactive: false,
-          publishTargets: ['@electron-forge/publisher-test'],
+          publishTargets: ['@electronite-forge/publisher-test'],
           dryRunResume: true,
         });
       });

@@ -1,18 +1,18 @@
-import { ForgeTemplate } from '@electron-forge/shared-types';
+import { ForgeTemplate } from '@electronite-forge/shared-types';
 import debug from 'debug';
 import resolvePackage from 'resolve-package';
 
 import { PossibleModule } from '../../util/require-search';
 
-const d = debug('electron-forge:init:find-template');
+const d = debug('electronite-forge:init:find-template');
 
 export const findTemplate = async (dir: string, template: string): Promise<ForgeTemplate> => {
   let templateModulePath!: string;
   const resolveTemplateTypes = [
-    ['global', `electron-forge-template-${template}`],
-    ['global', `@electron-forge/template-${template}`],
-    ['local', `electron-forge-template-${template}`],
-    ['local', `@electron-forge/template-${template}`],
+    ['global', `electronite-forge-template-${template}`],
+    ['global', `@electronite-forge/template-${template}`],
+    ['local', `electronite-forge-template-${template}`],
+    ['local', `@electronite-forge/template-${template}`],
     ['local', template],
   ];
   let foundTemplate = false;
@@ -32,7 +32,7 @@ export const findTemplate = async (dir: string, template: string): Promise<Forge
     }
   }
   if (!foundTemplate) {
-    throw new Error(`Failed to locate custom template: "${template}"\n\nTry \`npm install -g @electron-forge/template-${template}\``);
+    throw new Error(`Failed to locate custom template: "${template}"\n\nTry \`npm install -g @electronite-forge/template-${template}\``);
   }
 
   d(`found template module at: ${templateModulePath}`);

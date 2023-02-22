@@ -1,9 +1,9 @@
 import path from 'path';
 
-import { getElectronVersion } from '@electron-forge/core-utils';
-import { MakerBase } from '@electron-forge/maker-base';
-import { ForgeArch, ForgeConfigMaker, ForgeMakeResult, ForgePlatform, IForgeResolvableMaker, ResolvedForgeConfig } from '@electron-forge/shared-types';
 import { getHostArch } from '@electron/get';
+import { getElectronVersion } from '@electronite-forge/core-utils';
+import { MakerBase } from '@electronite-forge/maker-base';
+import { ForgeArch, ForgeConfigMaker, ForgeMakeResult, ForgePlatform, IForgeResolvableMaker, ResolvedForgeConfig } from '@electronite-forge/shared-types';
 import chalk from 'chalk';
 import filenamify from 'filenamify';
 import fs from 'fs-extra';
@@ -158,7 +158,7 @@ export const listrMake = (
               const MakerClass = requireSearch<typeof MakerImpl>(dir, [resolvableTarget.name]);
               if (!MakerClass) {
                 throw new Error(
-                  `Could not find module with name '${resolvableTarget.name}'. If this is a package from NPM, make sure it's listed in the devDependencies of your package.json. If this is a local module, make sure you have the correct path to its entry point. Try using the DEBUG="electron-forge:require-search" environment variable for more information.`
+                  `Could not find module with name '${resolvableTarget.name}'. If this is a package from NPM, make sure it's listed in the devDependencies of your package.json. If this is a local module, make sure you have the correct path to its entry point. Try using the DEBUG="electronite-forge:require-search" environment variable for more information.`
                 );
               }
 

@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { getElectronModulePath } from '@electron-forge/core-utils';
+import { getElectronModulePath } from '@electronite-forge/core-utils';
 import chalk from 'chalk';
 import logSymbols from 'log-symbols';
 
@@ -12,7 +12,7 @@ export function pluginCompileExists(packageJSON: PackageJSON): boolean {
     return false;
   }
 
-  const pluginCompileName = '@electron-forge/plugin-compile';
+  const pluginCompileName = '@electronite-forge/plugin-compile';
   const findPluginCompile = (packageName: string): boolean => packageName === pluginCompileName;
 
   if (Object.keys(packageJSON.devDependencies as Dependencies).find(findPluginCompile)) {

@@ -1,6 +1,6 @@
 const path = require('path');
 
-const baseTemplate = require('@electron-forge/template-base').default;
+const baseTemplate = require('@electronite-forge/template-base').default;
 const fs = require('fs-extra');
 
 module.exports = {

@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { api, StartOptions } from '@electron-forge/core';
-import { ElectronProcess } from '@electron-forge/shared-types';
+import { api, StartOptions } from '@electronite-forge/core';
+import { ElectronProcess } from '@electronite-forge/shared-types';
 import program from 'commander';
 import fs from 'fs-extra';
 
@@ -36,7 +36,7 @@ import workingDir from './util/working-dir';
   program.on('--help', () => {
     console.log('  Any arguments found after "--" will be passed to the Electron app, e.g.');
     console.log('');
-    console.log('    $ electron-forge /path/to/project -l -- -d -f foo.txt');
+    console.log('    $ electronite-forge /path/to/project -l -- -d -f foo.txt');
     console.log('');
     console.log('  will pass the arguments "-d -f foo.txt" to the Electron app');
   });

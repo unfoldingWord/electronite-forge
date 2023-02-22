@@ -5,7 +5,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "electron-forge start"
+    "start": "electronite-forge start"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,7 @@
     "forge": "./forge.config.yml"
   },
   "devDependencies": {
-    "@electron-forge/shared-types": "*",
+    "@electronite-forge/shared-types": "*",
     "electron-prebuilt": "9.9.9"
   }
 }

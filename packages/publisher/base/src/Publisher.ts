@@ -1,4 +1,4 @@
-import { ForgeListrTaskDefinition, ForgeMakeResult, ForgePlatform, IForgePublisher, ResolvedForgeConfig } from '@electron-forge/shared-types';
+import { ForgeListrTaskDefinition, ForgeMakeResult, ForgePlatform, IForgePublisher, ResolvedForgeConfig } from '@electronite-forge/shared-types';
 
 export interface PublisherOptions {
   /**

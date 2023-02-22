@@ -10,7 +10,7 @@ as well.
 ## Usage
 
 ```js
-import Logger from '@electron-forge/web-multi-logger';
+import Logger from '@electronite-forge/web-multi-logger';
 
 const logger = new Logger();
 

@@ -1,6 +1,6 @@
 ## publisher-s3
 
-`@electron-forge/publisher-s3` publishes all your artifacts to an Amazon S3 bucket where users will be able to download them.
+`@electronite-forge/publisher-s3` publishes all your artifacts to an Amazon S3 bucket where users will be able to download them.
 
 By default, all files are positioned at the following key:
 
@@ -14,7 +14,7 @@ module.exports = {
   // ...
   publishers: [
     {
-      name: '@electron-forge/publisher-s3',
+      name: '@electronite-forge/publisher-s3',
       config: {
         bucket: 'my-bucket',
         public: true

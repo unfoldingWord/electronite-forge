@@ -33,7 +33,7 @@ program
   .version(metadata.version)
   .option('--verbose', 'Enables verbose mode')
   .command('init', 'Initialize a new Electron application')
-  .command('import', 'Attempts to navigate you through the process of importing an existing project to "electron-forge"')
+  .command('import', 'Attempts to navigate you through the process of importing an existing project to "electronite-forge"')
   .command('lint', 'Lints the current Electron application')
   .command('package', 'Package the current Electron application')
   .command('make', 'Generate distributables for the current Electron application')

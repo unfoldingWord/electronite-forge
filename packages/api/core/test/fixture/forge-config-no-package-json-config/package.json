@@ -2,6 +2,6 @@
   "name": "test",
   "devDependencies": {
     "electron": "^1000.0.0",
-    "@electron-forge/cli": "6.0.0"
+    "@electronite-forge/cli": "6.0.0"
   }
 }

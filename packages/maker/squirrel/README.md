@@ -1,6 +1,6 @@
 ## maker-squirrel
 
-`@electron-forge/maker-squirrel` builds a number of files required to distribute apps using the Squirrel.Windows framework. It generates a `{appName} Setup.exe` file which is the main installer for your application, `{appName}-full.nupkg` and a `RELEASES` file which you use to issue updates to your application.
+`@electronite-forge/maker-squirrel` builds a number of files required to distribute apps using the Squirrel.Windows framework. It generates a `{appName} Setup.exe` file which is the main installer for your application, `{appName}-full.nupkg` and a `RELEASES` file which you use to issue updates to your application.
 
 Pre-requisites:
 * Windows machine
@@ -10,7 +10,7 @@ Configuration options are documented in [`MakerSquirrelConfigOptions`](https://j
 
 ```javascript
 {
-  "name": "@electron-forge/maker-squirrel",
+  "name": "@electronite-forge/maker-squirrel",
   "config": {
     "certificateFile": "./cert.pfx",
     "certificatePassword": "this-is-a-secret"

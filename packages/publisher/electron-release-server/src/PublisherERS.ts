@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { PublisherBase, PublisherOptions } from '@electron-forge/publisher-base';
-import { ForgeArch, ForgePlatform } from '@electron-forge/shared-types';
+import { PublisherBase, PublisherOptions } from '@electronite-forge/publisher-base';
+import { ForgeArch, ForgePlatform } from '@electronite-forge/shared-types';
 import debug from 'debug';
 import FormData from 'form-data';
 import fs from 'fs-extra';
@@ -9,7 +9,7 @@ import fetch, { RequestInfo, RequestInit, Response } from 'node-fetch';
 
 import { PublisherERSConfig } from './Config';
 
-const d = debug('electron-forge:publish:ers');
+const d = debug('electronite-forge:publish:ers');
 
 interface ERSAsset {
   name: string;

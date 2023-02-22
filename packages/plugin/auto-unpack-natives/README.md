@@ -8,7 +8,7 @@ This plugin will automatically add all native Node modules in your node_modules 
 module.exports = {
   plugins: [
    {
-     name: '@electron-forge/plugin-auto-unpack-natives'
+     name: '@electronite-forge/plugin-auto-unpack-natives'
    }
   ]
 }

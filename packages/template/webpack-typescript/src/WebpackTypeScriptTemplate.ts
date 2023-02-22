@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { ForgeListrTaskDefinition, InitTemplateOptions } from '@electron-forge/shared-types';
-import { BaseTemplate } from '@electron-forge/template-base';
+import { ForgeListrTaskDefinition, InitTemplateOptions } from '@electronite-forge/shared-types';
+import { BaseTemplate } from '@electronite-forge/template-base';
 import fs from 'fs-extra';
 
 class WebpackTypeScriptTemplate extends BaseTemplate {

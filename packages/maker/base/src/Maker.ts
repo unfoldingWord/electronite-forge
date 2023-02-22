@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { ForgeArch, ForgePlatform, IForgeMaker, ResolvedForgeConfig } from '@electron-forge/shared-types';
+import { ForgeArch, ForgePlatform, IForgeMaker, ResolvedForgeConfig } from '@electronite-forge/shared-types';
 import fs from 'fs-extra';
 import which from 'which';
 

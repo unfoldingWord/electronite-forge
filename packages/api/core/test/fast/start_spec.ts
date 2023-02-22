@@ -1,4 +1,4 @@
-import { ElectronProcess } from '@electron-forge/shared-types';
+import { ElectronProcess } from '@electronite-forge/shared-types';
 import { expect } from 'chai';
 import proxyquire from 'proxyquire';
 import { SinonStub, stub } from 'sinon';
@@ -21,7 +21,7 @@ describe('start', () => {
 
     start = proxyquire.noCallThru().load('../../src/api/start', {
       '../util/electron-executable': () => Promise.resolve('fake_electron_path'),
-      '@electron-forge/core-utils': {
+      '@electronite-forge/core-utils': {
         getElectronVersion: () => Promise.resolve('1.0.0'),
         listrCompatibleRebuildHook: () => Promise.resolve(),
       },

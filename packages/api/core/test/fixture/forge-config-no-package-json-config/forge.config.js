@@ -3,19 +3,19 @@ module.exports = {
   rebuildConfig: {},
   makers: [
     {
-      name: '@electron-forge/maker-squirrel',
+      name: '@electronite-forge/maker-squirrel',
       config: {},
     },
     {
-      name: '@electron-forge/maker-zip',
+      name: '@electronite-forge/maker-zip',
       platforms: ['darwin'],
     },
     {
-      name: '@electron-forge/maker-deb',
+      name: '@electronite-forge/maker-deb',
       config: {},
     },
     {
-      name: '@electron-forge/maker-rpm',
+      name: '@electronite-forge/maker-rpm',
       config: {},
     },
   ],

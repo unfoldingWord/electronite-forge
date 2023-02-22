@@ -10,7 +10,7 @@ Configuration options are documented in [`MakerWixConfig`](https://js.electronfo
 
 ```javascript
 {
-  name: '@electron-forge/maker-wix',
+  name: '@electronite-forge/maker-wix',
   config: {
     language: 1033,
     manufacturer: 'My Awesome Company'

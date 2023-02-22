@@ -1,5 +1,5 @@
 {
-  "name": "@electron-forge/test-utils",
+  "name": "@electronite-forge/test-utils",
   "version": "6.0.5",
   "description": "Helper utilities for the Electron Forge testsuite",
   "repository": "https://github.com/electron/forge",

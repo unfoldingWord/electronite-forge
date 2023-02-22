@@ -7,7 +7,7 @@ import {
   ResolvedForgeConfig,
   StartOptions,
   StartResult,
-} from '@electron-forge/shared-types';
+} from '@electronite-forge/shared-types';
 
 export { StartOptions };
 

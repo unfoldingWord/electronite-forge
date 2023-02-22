@@ -1,5 +1,5 @@
 {
-  "name": "@electron-forge/publisher-snapcraft",
+  "name": "@electronite-forge/publisher-snapcraft",
   "version": "6.0.5",
   "description": "Snapcraft publisher for Electron Forge",
   "repository": "https://github.com/electron/forge",
@@ -15,7 +15,7 @@
     "node": ">= 14.17.5"
   },
   "dependencies": {
-    "@electron-forge/publisher-base": "6.0.5",
+    "@electronite-forge/publisher-base": "6.0.5",
     "fs-extra": "^10.0.0"
   },
   "optionalDependencies": {

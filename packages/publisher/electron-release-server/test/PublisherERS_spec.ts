@@ -1,4 +1,4 @@
-import { ForgeMakeResult, ResolvedForgeConfig } from '@electron-forge/shared-types';
+import { ForgeMakeResult, ResolvedForgeConfig } from '@electronite-forge/shared-types';
 import { expect } from 'chai';
 import fetchMock from 'fetch-mock';
 import proxyquire from 'proxyquire';

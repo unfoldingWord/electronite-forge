@@ -1,7 +1,7 @@
 import crypto from 'crypto';
 import path from 'path';
 
-import { ForgeMakeResult } from '@electron-forge/shared-types';
+import { ForgeMakeResult } from '@electronite-forge/shared-types';
 import fs from 'fs-extra';
 
 const EXTENSION = '.forge.publish';

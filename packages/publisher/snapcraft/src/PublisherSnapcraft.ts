@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { PublisherBase, PublisherOptions } from '@electron-forge/publisher-base';
+import { PublisherBase, PublisherOptions } from '@electronite-forge/publisher-base';
 import fs from 'fs-extra';
 
 import { PublisherSnapcraftConfig } from './Config';

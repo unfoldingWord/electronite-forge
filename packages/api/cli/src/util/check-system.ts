@@ -2,13 +2,13 @@ import { exec } from 'child_process';
 import os from 'os';
 import path from 'path';
 
-import { utils as forgeUtils } from '@electron-forge/core';
-import { ForgeListrTask } from '@electron-forge/shared-types';
+import { utils as forgeUtils } from '@electronite-forge/core';
+import { ForgeListrTask } from '@electronite-forge/shared-types';
 import debug from 'debug';
 import fs from 'fs-extra';
 import semver from 'semver';
 
-const d = debug('electron-forge:check-system');
+const d = debug('electronite-forge:check-system');
 
 async function getGitVersion(): Promise<string | null> {
   return new Promise<string | null>((resolve) => {

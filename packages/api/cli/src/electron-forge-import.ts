@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { api } from '@electron-forge/core';
+import { api } from '@electronite-forge/core';
 import program from 'commander';
 import fs from 'fs-extra';
 

@@ -5,10 +5,10 @@
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish"
+    "start": "electronite-forge start",
+    "package": "electronite-forge package",
+    "make": "electronite-forge make",
+    "publish": "electronite-forge publish"
   },
   "keywords": [],
   "author": "",

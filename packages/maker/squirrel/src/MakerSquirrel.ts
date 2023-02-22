@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { MakerBase, MakerOptions } from '@electron-forge/maker-base';
-import { ForgePlatform } from '@electron-forge/shared-types';
+import { MakerBase, MakerOptions } from '@electronite-forge/maker-base';
+import { ForgePlatform } from '@electronite-forge/shared-types';
 import { convertVersion, createWindowsInstaller, Options as ElectronWinstallerOptions } from 'electron-winstaller';
 import fs from 'fs-extra';
 

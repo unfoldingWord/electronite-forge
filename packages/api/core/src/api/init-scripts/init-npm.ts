@@ -1,18 +1,18 @@
 import path from 'path';
 
-import { safeYarnOrNpm, yarnOrNpmSpawn } from '@electron-forge/core-utils';
-import { ForgeListrTask } from '@electron-forge/shared-types';
+import { safeYarnOrNpm, yarnOrNpmSpawn } from '@electronite-forge/core-utils';
+import { ForgeListrTask } from '@electronite-forge/shared-types';
 import debug from 'debug';
 import fs from 'fs-extra';
 
 import installDepList, { DepType, DepVersionRestriction } from '../../util/install-dependencies';
 import { readRawPackageJson } from '../../util/read-package-json';
 
-const d = debug('electron-forge:init:npm');
+const d = debug('electronite-forge:init:npm');
 const corePackage = fs.readJsonSync(path.resolve(__dirname, '../../../package.json'));
 
 export function siblingDep(name: string): string {
-  return `@electron-forge/${name}@^${corePackage.version}`;
+  return `@electronite-forge/${name}@^${corePackage.version}`;
 }
 
 export const deps = ['electron-squirrel-startup'];
@@ -41,7 +41,7 @@ export const initNPM = async (dir: string, task: ForgeListrTask<any>): Promise<v
     const packageJson = await readRawPackageJson(dir);
     const linkFolder = path.resolve(__dirname, '..', '..', '..', '..', '..', '..', '.links');
     for (const packageName of Object.keys(packageJson.devDependencies)) {
-      if (packageName.startsWith('@electron-forge/')) {
+      if (packageName.startsWith('@electronite-forge/')) {
         task.output = `${packageManager} link --link-folder ${linkFolder} ${packageName}`;
         await yarnOrNpmSpawn(['link', '--link-folder', linkFolder, packageName], {
           cwd: dir,

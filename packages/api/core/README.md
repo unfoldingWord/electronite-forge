@@ -6,7 +6,7 @@ API as a number of simple JS functions.
 ## Basic Usage
 
 ```js
-import { api } from '@electron-forge/core';
+import { api } from '@electronite-forge/core';
 
 // Package the current directory as an Electron app
 api.package(__dirname);

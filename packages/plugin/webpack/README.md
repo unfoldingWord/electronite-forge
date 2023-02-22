@@ -8,7 +8,7 @@ This plugin makes it easy to set up standard webpack tooling to compile both you
 module.exports = {
   plugins: [
     {
-      name: '@electron-forge/plugin-webpack',
+      name: '@electronite-forge/plugin-webpack',
       config: {
         mainConfig: './webpack.main.config.js',
         renderer: {

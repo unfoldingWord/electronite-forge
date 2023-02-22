@@ -1,10 +1,10 @@
 import http from 'http';
 import path from 'path';
 
-import { getElectronVersion, listrCompatibleRebuildHook } from '@electron-forge/core-utils';
-import { namedHookWithTaskFn, PluginBase } from '@electron-forge/plugin-base';
-import { ForgeMultiHookMap, ResolvedForgeConfig, StartResult } from '@electron-forge/shared-types';
-import Logger, { Tab } from '@electron-forge/web-multi-logger';
+import { getElectronVersion, listrCompatibleRebuildHook } from '@electronite-forge/core-utils';
+import { namedHookWithTaskFn, PluginBase } from '@electronite-forge/plugin-base';
+import { ForgeMultiHookMap, ResolvedForgeConfig, StartResult } from '@electronite-forge/shared-types';
+import Logger, { Tab } from '@electronite-forge/web-multi-logger';
 import chalk from 'chalk';
 import debug from 'debug';
 import fs from 'fs-extra';
@@ -18,7 +18,7 @@ import once from './util/once';
 import { isLocalWindow, isPreloadOnly } from './util/rendererTypeUtils';
 import WebpackConfigGenerator from './WebpackConfig';
 
-const d = debug('electron-forge:plugin:webpack');
+const d = debug('electronite-forge:plugin:webpack');
 const DEFAULT_PORT = 3000;
 const DEFAULT_LOGGER_PORT = 9000;
 

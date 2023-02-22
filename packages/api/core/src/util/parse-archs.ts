@@ -1,4 +1,4 @@
-import { ForgeArch, ForgePlatform } from '@electron-forge/shared-types';
+import { ForgeArch, ForgePlatform } from '@electronite-forge/shared-types';
 
 // TODO: convert to an import statement when this is a public API
 // eslint-disable-next-line @typescript-eslint/no-var-requires

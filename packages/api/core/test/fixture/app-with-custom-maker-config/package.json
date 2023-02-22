@@ -10,7 +10,7 @@
           }
         },
         {
-          "name": "@electron-forge/non-existent-forge-maker"
+          "name": "@electronite-forge/non-existent-forge-maker"
         }
       ]
     }

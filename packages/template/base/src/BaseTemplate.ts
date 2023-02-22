@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { ForgeListrTaskDefinition, ForgeTemplate, InitTemplateOptions } from '@electron-forge/shared-types';
+import { ForgeListrTaskDefinition, ForgeTemplate, InitTemplateOptions } from '@electronite-forge/shared-types';
 import debug from 'debug';
 import fs from 'fs-extra';
 
@@ -9,7 +9,7 @@ import determineAuthor from './determine-author';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const currentForgeVersion = require('../package.json').version;
 
-const d = debug('electron-forge:template:base');
+const d = debug('electronite-forge:template:base');
 const tmplDir = path.resolve(__dirname, '../tmpl');
 
 export class BaseTemplate implements ForgeTemplate {

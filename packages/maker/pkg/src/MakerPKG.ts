@@ -1,8 +1,8 @@
 import path from 'path';
 
-import { MakerBase, MakerOptions } from '@electron-forge/maker-base';
-import { ForgePlatform } from '@electron-forge/shared-types';
 import { flatAsync } from '@electron/osx-sign';
+import { MakerBase, MakerOptions } from '@electronite-forge/maker-base';
+import { ForgePlatform } from '@electronite-forge/shared-types';
 
 import { MakerPKGConfig } from './Config';
 

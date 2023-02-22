@@ -1,7 +1,7 @@
 import * as os from 'os';
 import * as path from 'path';
 
-import { ResolvedForgeConfig } from '@electron-forge/shared-types';
+import { ResolvedForgeConfig } from '@electronite-forge/shared-types';
 import { expect } from 'chai';
 import { IgnoreFunction } from 'electronite-packager';
 import * as fs from 'fs-extra';
@@ -18,7 +18,7 @@ describe('WebpackPlugin', () => {
     },
   };
 
-  const webpackTestDir = path.resolve(os.tmpdir(), 'electron-forge-plugin-webpack-test');
+  const webpackTestDir = path.resolve(os.tmpdir(), 'electronite-forge-plugin-webpack-test');
 
   describe('TCP port', () => {
     it('should fail for privileged ports', () => {

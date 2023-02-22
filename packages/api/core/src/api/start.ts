@@ -1,7 +1,7 @@
 import { spawn, SpawnOptions } from 'child_process';
 
-import { getElectronVersion, listrCompatibleRebuildHook } from '@electron-forge/core-utils';
-import { ElectronProcess, ForgeArch, ForgeListrTask, ForgePlatform, ResolvedForgeConfig, StartOptions } from '@electron-forge/shared-types';
+import { getElectronVersion, listrCompatibleRebuildHook } from '@electronite-forge/core-utils';
+import { ElectronProcess, ForgeArch, ForgeListrTask, ForgePlatform, ResolvedForgeConfig, StartOptions } from '@electronite-forge/shared-types';
 import chalk from 'chalk';
 import debug from 'debug';
 import { Listr } from 'listr2';
@@ -12,7 +12,7 @@ import { getHookListrTasks, runHook } from '../util/hook';
 import { readMutatedPackageJson } from '../util/read-package-json';
 import resolveDir from '../util/resolve-dir';
 
-const d = debug('electron-forge:start');
+const d = debug('electronite-forge:start');
 
 export { StartOptions };
 

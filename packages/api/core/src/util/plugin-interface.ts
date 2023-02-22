@@ -1,4 +1,4 @@
-import { PluginBase } from '@electron-forge/plugin-base';
+import { PluginBase } from '@electronite-forge/plugin-base';
 import {
   ForgeListrTaskDefinition,
   ForgeMutatingHookFn,
@@ -9,7 +9,7 @@ import {
   IForgePluginInterface,
   ResolvedForgeConfig,
   StartResult,
-} from '@electron-forge/shared-types';
+} from '@electronite-forge/shared-types';
 import chalk from 'chalk';
 import debug from 'debug';
 
@@ -17,7 +17,7 @@ import { StartOptions } from '../api';
 
 import requireSearch from './require-search';
 
-const d = debug('electron-forge:plugins');
+const d = debug('electronite-forge:plugins');
 
 function isForgePlugin(plugin: IForgePlugin | unknown): plugin is IForgePlugin {
   return (plugin as IForgePlugin).__isElectronForgePlugin;

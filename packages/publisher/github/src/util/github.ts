@@ -3,8 +3,8 @@ import { retry } from '@octokit/plugin-retry';
 import { Octokit } from '@octokit/rest';
 import debug from 'debug';
 
-const logInfo = debug('electron-forge:publisher:github:info');
-const logDebug = debug('electron-forge:publisher:github:debug');
+const logInfo = debug('electronite-forge:publisher:github:info');
+const logDebug = debug('electronite-forge:publisher:github:debug');
 
 export default class GitHub {
   private options: OctokitOptions;

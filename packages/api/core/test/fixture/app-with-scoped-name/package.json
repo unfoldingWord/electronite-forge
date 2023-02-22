@@ -5,7 +5,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "electron-forge start"
+    "start": "electronite-forge start"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,7 @@
     "forge": {
       "makers": [
         {
-          "name": "@electron-forge/maker-zip",
+          "name": "@electronite-forge/maker-zip",
           "platforms": [
             "linux"
           ]

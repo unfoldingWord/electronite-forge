@@ -1,6 +1,6 @@
 import runElectronegativity from '@doyensec/electronegativity';
-import { PluginBase } from '@electron-forge/plugin-base';
-import { ForgeHookFn, ForgeHookMap } from '@electron-forge/shared-types';
+import { PluginBase } from '@electronite-forge/plugin-base';
+import { ForgeHookFn, ForgeHookMap } from '@electronite-forge/shared-types';
 
 export type Confidence = 'certain' | 'firm' | 'tentative';
 export type CustomCheck = 'dangerousfunctionsjscheck' | 'remotemodulejscheck';

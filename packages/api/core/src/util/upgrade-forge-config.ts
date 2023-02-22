@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { ForgeConfig, ForgePlatform, IForgeResolvableMaker, IForgeResolvablePublisher } from '@electron-forge/shared-types';
+import { ForgeConfig, ForgePlatform, IForgeResolvableMaker, IForgeResolvablePublisher } from '@electronite-forge/shared-types';
 
 import { siblingDep } from '../api/init-scripts/init-npm';
 
@@ -80,7 +80,7 @@ function generateForgeMakerConfig(forge5Config: Forge5Config): IForgeResolvableM
     const config = forge5Config[forge5Key];
     if (config) {
       makers.push({
-        name: `@electron-forge/maker-${makerType}`,
+        name: `@electronite-forge/maker-${makerType}`,
         config: forge5Config[forge5Key],
         platforms: makeTargets.get(makerType) || [],
       } as IForgeResolvableMaker);
@@ -90,7 +90,7 @@ function generateForgeMakerConfig(forge5Config: Forge5Config): IForgeResolvableM
   const zipPlatforms = makeTargets.get('zip');
   if (zipPlatforms) {
     makers.push({
-      name: '@electron-forge/maker-zip',
+      name: '@electronite-forge/maker-zip',
       platforms: zipPlatforms,
     } as IForgeResolvableMaker);
   }
@@ -132,7 +132,7 @@ function generateForgePublisherConfig(forge5Config: Forge5Config): IForgeResolva
       }
       publishers.push({
         config,
-        name: `@electron-forge/publisher-${publisherType}`,
+        name: `@electronite-forge/publisher-${publisherType}`,
         platforms: null,
       } as IForgeResolvableMaker);
     }
@@ -162,7 +162,7 @@ export default function upgradeForgeConfig(forge5Config: Forge5Config): ForgeCon
 
 export function updateUpgradedForgeDevDeps(packageJSON: ForgePackageJSON, devDeps: string[]): string[] {
   const forgeConfig = packageJSON.config.forge;
-  devDeps = devDeps.filter((dep) => !dep.startsWith('@electron-forge/maker-'));
+  devDeps = devDeps.filter((dep) => !dep.startsWith('@electronite-forge/maker-'));
   devDeps = devDeps.concat((forgeConfig.makers as IForgeResolvableMaker[]).map((maker: IForgeResolvableMaker) => siblingDep(path.basename(maker.name))));
   devDeps = devDeps.concat(
     (forgeConfig.publishers as IForgeResolvablePublisher[]).map((publisher: IForgeResolvablePublisher) => siblingDep(path.basename(publisher.name)))

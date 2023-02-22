@@ -1,10 +1,10 @@
 {
-  "name": "electron-forge-template-dummy",
+  "name": "electronite-forge-template-dummy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron-forge start"
+    "start": "electronite-forge start"
   },
   "keywords": [],
   "author": "",

@@ -1,6 +1,6 @@
 {
-  "name": "electron-forge",
-  "version": "0.0.0-development",
+  "name": "electronite-forge",
+  "version": "6.0.5-beta",
   "private": true,
   "license": "MIT",
   "engines": {

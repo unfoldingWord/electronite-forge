@@ -1,5 +1,5 @@
-import { PluginBase } from '@electron-forge/plugin-base';
-import { ForgeHookFn, ForgeHookMap } from '@electron-forge/shared-types';
+import { PluginBase } from '@electronite-forge/plugin-base';
+import { ForgeHookFn, ForgeHookMap } from '@electronite-forge/shared-types';
 import fs from 'fs-extra';
 
 import { LocalElectronPluginConfig } from './Config';

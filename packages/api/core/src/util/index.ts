@@ -1,4 +1,4 @@
-import { getElectronVersion, hasYarn, yarnOrNpmSpawn } from '@electron-forge/core-utils';
+import { getElectronVersion, hasYarn, yarnOrNpmSpawn } from '@electronite-forge/core-utils';
 
 import { BuildIdentifierConfig, BuildIdentifierMap, fromBuildIdentifier } from './forge-config';
 

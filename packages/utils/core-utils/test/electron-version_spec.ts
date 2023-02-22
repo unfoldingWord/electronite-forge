@@ -111,7 +111,7 @@ describe('getElectronModulePath', () => {
   describe('with no electron installed', () => {
     let tempDir: string;
     before(async () => {
-      tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'electron-forge-test-'));
+      tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'electronite-forge-test-'));
     });
 
     it('throws an error saying it cannot find electron', async () => {

@@ -1,4 +1,4 @@
-import { ElectronProcess, ForgeMakeResult } from '@electron-forge/shared-types';
+import { ElectronProcess, ForgeMakeResult } from '@electronite-forge/shared-types';
 
 import ForgeUtils from '../util';
 

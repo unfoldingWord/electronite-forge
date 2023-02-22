@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { MakerBase, MakerOptions } from '@electron-forge/maker-base';
-import { ForgeArch, ForgePlatform } from '@electron-forge/shared-types';
+import { MakerBase, MakerOptions } from '@electronite-forge/maker-base';
+import { ForgeArch, ForgePlatform } from '@electronite-forge/shared-types';
 
 import { MakerDebConfig } from './Config';
 
