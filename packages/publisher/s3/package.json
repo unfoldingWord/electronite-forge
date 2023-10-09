@@ -1,6 +1,6 @@
 {
   "name": "@electronite-forge/publisher-s3",
-  "version": "6.0.5",
+  "version": "6.0.5-beta",
   "description": "S3 publisher for Electron Forge",
   "repository": "https://github.com/electron/forge",
   "author": "Samuel Attard",
@@ -19,8 +19,8 @@
     "@aws-sdk/client-s3": "^3.28.0",
     "@aws-sdk/lib-storage": "^3.28.0",
     "@aws-sdk/types": "^3.25.0",
-    "@electronite-forge/publisher-base": "6.0.5",
-    "@electronite-forge/shared-types": "6.0.5",
+    "@electronite-forge/publisher-base": "6.0.5-beta",
+    "@electronite-forge/shared-types": "6.0.5-beta",
     "debug": "^4.3.1"
   },
   "publishConfig": {

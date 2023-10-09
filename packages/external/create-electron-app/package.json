@@ -1,13 +1,13 @@
 {
   "name": "create-electron-app",
-  "version": "6.0.5",
+  "version": "6.0.5-beta",
   "description": "Create Electron App",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "author": "Samuel Attard",
   "license": "MIT",
   "dependencies": {
-    "@electronite-forge/cli": "6.0.5"
+    "@electronite-forge/cli": "6.0.5-beta"
   },
   "bin": {
     "create-electron-app": "dist/index.js"

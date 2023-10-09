@@ -1,6 +1,6 @@
 {
   "name": "@electronite-forge/plugin-webpack",
-  "version": "6.0.5",
+  "version": "6.0.5-beta",
   "description": "Webpack plugin for Electron Forge, lets you use Webpack directly in your tooling",
   "repository": "https://github.com/electron/forge",
   "author": "Samuel Attard",
@@ -24,10 +24,10 @@
     "node": ">= 14.17.5"
   },
   "dependencies": {
-    "@electronite-forge/core-utils": "6.0.5",
-    "@electronite-forge/plugin-base": "6.0.5",
-    "@electronite-forge/shared-types": "6.0.5",
-    "@electronite-forge/web-multi-logger": "6.0.5",
+    "@electronite-forge/core-utils": "6.0.5-beta",
+    "@electronite-forge/plugin-base": "6.0.5-beta",
+    "@electronite-forge/shared-types": "6.0.5-beta",
+    "@electronite-forge/web-multi-logger": "6.0.5-beta",
     "chalk": "^4.0.0",
     "debug": "^4.3.1",
     "fs-extra": "^10.0.0",

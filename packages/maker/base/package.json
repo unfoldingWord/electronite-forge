@@ -1,6 +1,6 @@
 {
   "name": "@electronite-forge/maker-base",
-  "version": "6.0.5",
+  "version": "6.0.5-beta",
   "description": "Base maker for Electron Forge",
   "repository": "https://github.com/electron/forge",
   "author": "Samuel Attard",
@@ -16,7 +16,7 @@
     "node": ">= 14.17.5"
   },
   "dependencies": {
-    "@electronite-forge/shared-types": "6.0.5",
+    "@electronite-forge/shared-types": "6.0.5-beta",
     "fs-extra": "^10.0.0",
     "which": "^2.0.2"
   },

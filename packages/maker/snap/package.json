@@ -1,6 +1,6 @@
 {
   "name": "@electronite-forge/maker-snap",
-  "version": "6.0.5",
+  "version": "6.0.5-beta",
   "description": "Snap maker for Electron Forge",
   "repository": "https://github.com/electron/forge",
   "license": "MIT",
@@ -21,8 +21,8 @@
     "node": ">= 14.17.5"
   },
   "dependencies": {
-    "@electronite-forge/maker-base": "6.0.5",
-    "@electronite-forge/shared-types": "6.0.5"
+    "@electronite-forge/maker-base": "6.0.5-beta",
+    "@electronite-forge/shared-types": "6.0.5-beta"
   },
   "optionalDependencies": {
     "electron-installer-snap": "^5.1.0"
